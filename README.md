@@ -20,11 +20,11 @@
    * I personally use **@reboot sudo python </path/to/the/program>**
 
 ### Troubleshooting
-Verify that the code is running: ps aux | grep python
-Verify that zigbee2mqtt is running: sudo service zigbee2mqtt status.
-* Turn it on: sudo service zigbee2mqtt start
-* Turn it off: sudo service zigbee2mqtt stop
-* Restart it: sudo service zigbee2mqtt restart
+* Verify that the code is running: ps aux | grep python
+* Verify that zigbee2mqtt is running: sudo service zigbee2mqtt status.
+  * Turn it on: sudo service zigbee2mqtt start
+  * Turn it off: sudo service zigbee2mqtt stop
+  * Restart it: sudo service zigbee2mqtt restart
 
 Get a peak on the stick-sensor communication: sudo journalctl -u zigbee2mqtt.service -f
 
