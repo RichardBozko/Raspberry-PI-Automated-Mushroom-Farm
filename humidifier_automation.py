@@ -2,9 +2,6 @@ import os
 import time
 import RPi.GPIO as GPIO
 from datetime import datetime
-import sys
-import shutil
-import linecache
 
 #Length of activation time
 turn_on_time = 30
