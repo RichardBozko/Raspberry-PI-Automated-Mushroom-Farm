@@ -26,7 +26,7 @@
   * Turn it off: sudo service zigbee2mqtt stop
   * Restart it: sudo service zigbee2mqtt restart
 
-Get a peak on the stick-sensor communication: sudo journalctl -u zigbee2mqtt.service -f
+Get a peak on the stick-to-sensor communication: sudo journalctl -u zigbee2mqtt.service -f
 
 
 
