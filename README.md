@@ -8,7 +8,7 @@
 3. Get zigbee2mqtt running as a service on the PI 
    * https://www.zigbee2mqtt.io/guide/getting-started/ for the official guide
    * https://flemmingss.com/how-to-set-up-zigbee2mqtt-on-a-raspberry-pi-and-integrate-it-with-home-assistant/ covers everything useful though
-   * If you get an error saying 'Cannot connect to MQTT server!' when trying to run zigbee2mqtt you can simply 'sudo apt-get install mosquitto' which should fix it.
+   * If you get an error saying 'Cannot connect to MQTT server!' when trying to run zigbee2mqtt you can simply run 'sudo apt-get install mosquitto' which should fix it.
 3. Plug the sniffer stick and the control component of the Energine remote-controlled sockets into the Raspberry PI
    * ![image](https://user-images.githubusercontent.com/38185772/170876467-03635355-fdff-4a28-9520-27e27a8f486b.png)
 4. Plug the humidifier into the Energine socket
