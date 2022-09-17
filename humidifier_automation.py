@@ -66,7 +66,6 @@ def check_sensor(num):
 
 # Turn outlet on.
 # Then if that does not go through,try again until you get there 
-# and log the failures along the way
 def turn_on():
     on()
     while(GPIO.output(13, False)):
@@ -75,8 +74,7 @@ def turn_on():
 
 
 # Turn outlet off.
-# Then if that does not go through, try again until you get there
-# and log the failures along the way    
+# Then if that does not go through, try again until you get there 
 def turn_off():
     off()
     while(GPIO.output(13, True)):
@@ -93,12 +91,14 @@ def main():
         # Reboot every 30 cycles. I found that without reboots,
         # the microSDs on RPIs that run a constant program with a lot
         # of R/W operations go bust and get corrupted for some reason.
+        # feel free to remove the reboot counter and the code associated with it
+        # if your microSDs haven't been cursed like mine
         reboot_counter, dry_counter = 0, 0
         while(reboot_counter <= 30):
             # Read status file for humidity values 
             hum1 = check_sensor(12)
             hum2 = check_sensor(18)
-            # If hum too low turn humidifier on for 30 seconds thrice
+            # If hum too low turn humidifier on for defined period of time thrice in short succession
             if(hum1 < humidity_threshold or hum2 < humidity_threshold):
                 for i in range(3):
                     turn_on()
