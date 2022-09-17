@@ -7,13 +7,13 @@
    * https://www.zigbee2mqtt.io/guide/adapters/flashing/flashing_the_cc2531.html
 3. Get zigbee2mqtt running as a service on the PI 
    * https://www.zigbee2mqtt.io/guide/getting-started/ for the official guide
-   * https://flemmingss.com/how-to-set-up-zigbee2mqtt-on-a-raspberry-pi-and-integrate-it-with-home-assistant/ covers everything useful though
+   * A very useful guide can also be found at https://flemmingss.com/how-to-set-up-zigbee2mqtt-on-a-raspberry-pi-and-integrate-it-with-home-assistant/ 
    * If you get an error saying 'Cannot connect to MQTT server!' when trying to run zigbee2mqtt you can simply run 'sudo apt-get install mosquitto' which should fix it.
 3. Plug the sniffer stick and the control component of the Energine remote-controlled sockets into the Raspberry PI
    * ![image](https://user-images.githubusercontent.com/38185772/170876467-03635355-fdff-4a28-9520-27e27a8f486b.png)
 4. Plug the humidifier into the Energine socket
    * ![image](https://user-images.githubusercontent.com/38185772/170876691-da3c4ca3-801a-41d6-8c4d-21e215cf7821.png)
-5. Stick the humidity sensors to the walls of the fruiting chamber and move end of the humidifier hose inside
+5. Stick the humidity sensors to the walls of the fruiting chamber and move the end of the humidifier hose inside the chamber
    * ![image](https://user-images.githubusercontent.com/38185772/170876885-0f9b8b4e-6cd1-4f87-aedc-775f2518df09.png)
    * Growing some barely alive lion's mane in the above picture
 6. Run the code and keep it running via a crontab entry (sudo crontab -e)
